@@ -356,6 +356,10 @@ nav ul li a:hover {
     margin-left: 0;
     text-align: center;
   }
+
+  .capabilities-container{
+    display: none;
+  }
 }
 
 /* Hero Section */
