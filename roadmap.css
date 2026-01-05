@@ -124,19 +124,22 @@ body {
 }
 
 /* Mobile Responsiveness */
+/* Mobile Responsiveness - Scale Preserved */
 @media (max-width: 768px) {
     body {
-        padding: 30px 15px;
+        padding: 20px 10px;
     }
 
     .roadmap {
         max-width: 100%;
+        transform: scale(0.95); /* Slight scale for better fit */
     }
 
     .step {
         flex-direction: column !important;
-        margin-bottom: 90px;
-        min-height: 160px;
+        margin-bottom: 70px; /* Reduced spacing */
+        min-height: 140px;
+        padding: 0 10px; /* Add side padding */
     }
 
     .step.reverse {
@@ -145,47 +148,61 @@ body {
 
     .step-content {
         max-width: 100%;
-        margin-top: 50px;
-        padding: 24px 28px;
+        margin-top: 40px; /* Tighter spacing */
+        padding: 20px 26px; /* Slightly reduced padding */
         border-radius: 20px;
+        font-size: 0.95em; /* Subtle scale */
     }
 
     .step-number {
-        left: 20px;
-        top: -25px;
+        left: 50%; /* Center on mobile */
+        transform: translateX(-50%);
+        top: -28px;
+        width: 58px;
+        height: 58px;
+        font-size: 22px;
+    }
+
+    .step-title {
+        font-size: 18px;
+        line-height: 1.25;
+    }
+
+    .step-desc {
+        font-size: 13.5px;
+        line-height: 1.5;
     }
 
     .connector {
         display: none;
     }
-
-    .step-title {
-        font-size: 18px;
-    }
-
-    .step-desc {
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 480px) {
     body {
-        padding: 20px 10px;
+        padding: 15px 8px;
+    }
+
+    .roadmap {
+        transform: scale(0.92);
     }
 
     .step {
-        margin-bottom: 80px;
+        margin-bottom: 65px;
+        min-height: 130px;
     }
 
     .step-content {
-        padding: 20px 24px;
-        margin-top: 45px;
+        padding: 18px 22px;
+        margin-top: 38px;
+        font-size: 0.92em;
     }
 
     .step-number {
-        width: 56px;
-        height: 56px;
+        width: 54px;
+        height: 54px;
         font-size: 20px;
+        top: -26px;
     }
 
     .step-title {
@@ -197,15 +214,15 @@ body {
     }
 }
 
-/* Scroll animations */
+/* Smooth Scroll Animations (Staggered) */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px) scale(0.95);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 

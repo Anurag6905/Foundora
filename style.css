@@ -249,12 +249,18 @@ nav ul li a:hover {
     text-align: center;
   }
 
+  .nav ul li a {
+    font-size: 0.8rem;
+  }
+
   nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    gap: 21px;
   }
 
   #Contact {
