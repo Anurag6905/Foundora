@@ -819,8 +819,8 @@ nav ul li a:hover {
   gap: 18px;
 }
 .ach-icon {
-  width: 360px;
-  height: 240px;
+  width: 320px;
+  height: 180px;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -828,8 +828,8 @@ nav ul li a:hover {
   margin-top: 2px;
 }
 .ach-icon img {
-  width: 360px;
-  height: 240px;
+  width: 300px;
+  height: 180px;
 }
 .ach-feature strong {
   font-size: 1.13rem;
@@ -851,6 +851,28 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .ach-maxburst {
+    margin-bottom: 0;
+  }
+  .ach-maxburst h2  {
+    text-align: center;
+  }
+  .ach-feature{
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 8px;
+  }
+  .ach-icon {
+    width: 100%;
+    height: auto;
+  }
+  .ach-icon img {
+    width: 100%;
+    height: 95%;
+  }
 }
 
 
