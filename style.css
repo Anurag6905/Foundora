@@ -773,6 +773,86 @@ nav ul li a:hover {
   }
 }
 
+.ach-maxburst {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto 64px auto;
+  padding: 64px 24px 32px 24px;
+}
+
+.ach-left {
+  flex: 2;
+}
+
+.ach-label {
+  color: #aaa;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.ach-maxburst h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 8px 0 36px 0;
+  letter-spacing: -1px;
+}
+.ach-maxburst h2 span {
+  color: #fff;
+  background: linear-gradient(90deg, #fff 60%, #f4b41a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ach-features {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ach-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.ach-icon {
+  width: 360px;
+  height: 240px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.ach-icon img {
+  width: 360px;
+  height: 240px;
+}
+.ach-feature strong {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #fff;
+}
+.ach-feature p {
+  margin: 6px 0 0 0;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Bar Chart */
+.ach-right {
+  width: 50%;
+  height: auto;
+  flex: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* Why Maxburst Section */
 .why-maxburst {
