@@ -1,0 +1,1 @@
+MakeMyVenture is a frontend-driven platform designed to present, validate, and communicate startup ideas effectively. It emphasizes clear value propositions, structured venture flow, and intuitive UI to help early-stage founders and teams move from idea to execution faster.
